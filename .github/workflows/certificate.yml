@@ -2,8 +2,8 @@ name: Certificate monitor
 
 on:
   schedule:
-    # 09:17 Asia/Taipei (UTC+8)
-    - cron: '17 1 * * *'
+    # Every hour from 09:00 through 17:00 Asia/Taipei (UTC+8), inclusive.
+    - cron: '0 1-9 * * *'
   workflow_dispatch:
 
 permissions:

@@ -1,6 +1,6 @@
 # 臺大資訊系統訓練班證書通知
 
-使用 Python + uv，每天台灣時間 **09:17** 透過 GitHub Actions 檢查
+使用 Python + uv，每天台灣時間 **09:00–17:00，每整點一次（含 17:00，共 9 次）** 透過 GitHub Actions 檢查
 [第479期課程（6250）](https://train.csie.ntu.edu.tw/school/news/certificate.php?id=6250)。
 課程狀態變成「已可領取證書」時，發送通知至 [ntfy.sh/aip479cert](https://ntfy.sh/aip479cert)，通知可點擊開啟領取頁面。
 
@@ -12,7 +12,7 @@
 
 Workflow 使用內建 `GITHUB_TOKEN` 的 `contents: write` 權限。Repository／組織政策需允許此權限，且 `state` 分支的規則需允許 Actions 直接寫入。手動執行也只接受預設分支，避免從舊版本程式更新正式紀錄。
 
-排程為 `17 1 * * *`（UTC）。GitHub 排程可能延遲；公開 repository 連續 60 天沒有活動時，排程可能自動停用，需要重新啟用。詳見 [GitHub 排程文件](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)。
+排程為 `0 1-9 * * *`（UTC），對應台灣時間每天 09:00、10:00、11:00、12:00、13:00、14:00、15:00、16:00、17:00，包含週末。GitHub 排程可能延遲，整點尤其可能遇到高負載；公開 repository 連續 60 天沒有活動時，排程可能自動停用，需要重新啟用。詳見 [GitHub 排程文件](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)。
 
 ## 本機執行
 
