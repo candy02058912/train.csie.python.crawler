@@ -3,12 +3,12 @@
   "topic": "aip479cert",
   "notified": false,
   "last_check": {
-    "checked_at": "2026-09-14T06:48:38.540861+00:00",
-    "run_url": "https://github.com/candy02058912/train.csie.python.crawler/actions/runs/34815008164",
+    "checked_at": "2026-09-14T14:20:30.310249+00:00",
+    "run_url": "https://github.com/candy02058912/train.csie.python.crawler/actions/runs/34854962664",
     "run_attempt": "1",
-    "status": null,
-    "result": "error",
+    "status": "全班成績尚未送達",
+    "result": "success",
     "notified_this_run": false,
-    "error": "The read operation timed out"
+    "error": null
   }
 }
