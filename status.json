@@ -3,8 +3,8 @@
   "topic": "aip479cert",
   "notified": true,
   "last_check": {
-    "checked_at": "2026-11-10T13:41:34.789038+00:00",
-    "run_url": "https://github.com/candy02058912/train.csie.python.crawler/actions/runs/42826817308",
+    "checked_at": "2026-11-10T20:57:10.523779+00:00",
+    "run_url": "https://github.com/candy02058912/train.csie.python.crawler/actions/runs/42900222620",
     "run_attempt": "1",
     "status": "已可領取證書",
     "result": "success",
